@@ -1,0 +1,67 @@
+// main steps to deal with (Prettier and ESLint) :
+
+dealing with eslint in terminal with out extenstion:
+
+1- create your npm based project (a project that has package.json file) - (npm init -y) => to create the package.json
+
+2- visit the eslint offeical website (https://eslint.org/) then install eslint => (npm init @eslint/config@latest)
+
+3- follow steps and choose rules that you want then finnally you have eslint in your project
+
+4- check rules for eslint from their offeical website (https://eslint.org/docs/latest/rules) (Configuration)
+
+5- you can congifure your rules for example : 
+
+    - {
+        rules : {
+        "no-unused-vars" : "warn"
+        }
+    } 
+
+6- add your scripts in package.json file : 
+
+    - "lint" : "eslint" => to run eslint
+    - "lint:fix" : "eslint --fix" => to fix errors (npx eslint --fix)
+
+
+
+dealing with eslint by extenstion: (visit this youtube video and get the info for this from the video here is the link : https://youtu.be/ycPl2NUFksg?si=Eet1Dc46_3RC7gPo)
+1- 
+
+
+
+
+dealing with Prettier in terminal: 
+
+1- create your npm based project (a project that has package.json file) - (npm init -y) => to create the package.json
+
+2- visit the prettier offeical website (https://prettier.io/) then install prettier => (npm install --save-dev --save-exact prettier)
+
+3- Add a .prettierrc to let your editor know that you are using Prettier. (Configuration file) (https://prettier.io/docs/en/options)
+
+4- Add a .prettierignore to let your editor know which files not to touch, as well as for being able
+
+5- npx prettier . => to show you formated files then run npx prettier . --write => to apply formate
+
+
+
+dealing with Prettier by extenstion: ((visit this youtube video and get the info for this from the video here is the link : https://youtu.be/_fzbg6_-JuE?si=l0yGtuRamNHT4dWD))
+
+
+
+
+
+dealing with eslint-plugin-prettier--
+1- install eslint-plugin-prettier and the config file => (npm install -D eslint-plugin-prettier eslint-config-prettier)
+
+2- got to eslint.config.mjs file and add the plugin (import eslintPluginPrettier from 'eslint-plugin-prettier/recommended';)
+
+3- add eslintPluginPrettier
+
+4- you can add the settings.json file in the .vscode folder to apply all rules in differrent workspaces
+    - for example :
+        {
+            "editor.codeActionsOnSave": {
+                "source.fixAll.eslint": "explicit"
+            }
+        }

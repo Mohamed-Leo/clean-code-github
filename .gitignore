@@ -1,0 +1,33 @@
+# Node modules folder
+node_modules/
+
+# Logs
+logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Environment variables
+.env
+
+# Ignore Mac system files
+.DS_Store
+
+# Ignore vscode settings except settings.json
+.vscode/*
+!.vscode/settings.json
+
+# Ignore build output
+dist/
+build/
+
+# Ignore package-lock if you prefer not to include it
+# Uncomment the following line if needed
+# package-lock.json
+
+# Ignore TypeScript build files
+*.tsbuildinfo
+
+# Ignore .eslintcache files
+.eslintcache
