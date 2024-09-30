@@ -1,7 +1,3 @@
-Here’s the full updated README file with all the requested details, including the section on dealing with extensions and updated steps:
-
----
-
 # ESLint and Prettier Setup Guide
 
 This guide explains how to properly configure and integrate ESLint and Prettier into your project to maintain clean, consistent code. The instructions cover how to use these tools both via the terminal and through extensions.
